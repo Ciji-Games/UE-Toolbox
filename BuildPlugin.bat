@@ -4,8 +4,15 @@ setlocal EnableDelayedExpansion
 
 title Build Plugin
 
+:Start
+:: Prompt the user for the name of the folder to build
+set /p BuildFolder=Please enter the name of the folder you want to build: 
+
 set RootDirectory=%~dp0
 set RootDirectory=%RootDirectory:~0,-1%
+
+:: Update RootDirectory to include the BuildFolder
+set RootDirectory=%RootDirectory%\%BuildFolder%
 
 for %%i in ("%RootDirectory%\*.uplugin") do (
   set UpluginFilePath=%%~i
@@ -14,6 +21,9 @@ for %%i in ("%RootDirectory%\*.uplugin") do (
 
 cd..
 set RootDirectory=%cd%
+
+:: Update RootDirectory to include the BuildFolder
+set RootDirectory=%RootDirectory%\%BuildFolder%
 
 for %%i in ("%RootDirectory%\*.uplugin") do (
   set UpluginFilePath=%%~i
@@ -61,8 +71,37 @@ if defined EngineDirectory (
     goto ExitWithPause
 )
 
+:: Prompt the user to zip the plugin folder
+echo.
+choice /M "Do you want to zip the plugin folder?"
+if errorlevel 2 (
+  echo Not zipping the plugin folder.
+  goto ExitWithPause
+) else (
+  echo Zipping the plugin folder...
+  set TempZipDir=%RootDirectory%\%BuildFolder%_Temp
+  mkdir "!TempZipDir!"
+  xcopy /E /I "%RootDirectory%\Build" "!TempZipDir!\%BuildFolder%"
+  
+  :: Set the zip file name without the engine version
+  set ZipFileName=%RootDirectory%\%BuildFolder%.zip
+  echo ZipFileName: !ZipFileName!
+  
+  :: Debug output to verify ZipFileName
+  echo Debug: TempZipDir=!TempZipDir!
+  echo Debug: BuildFolder=%BuildFolder%
+  echo Debug: RootDirectory=%RootDirectory%
+  echo Debug: ZipFileName=!ZipFileName!
+  
+  powershell -Command "Compress-Archive -Path '!TempZipDir!\%BuildFolder%' -DestinationPath '!ZipFileName!'"
+  rmdir /S /Q "!TempZipDir!"
+  echo Plugin folder zipped successfully as !ZipFileName!.
+)
+
+
 :ExitWithPause
 pause
+
 exit /b 0
 
 endlocal
