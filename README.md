@@ -1,6 +1,6 @@
 # Usage Guide  
 
-## **ILoveUnreal.bat**  
+## **RegenerateCPP.bat**  
 **Purpose:** Cleans and rebuilds the entire C++ solution.  
 
 ### **Steps:**  
