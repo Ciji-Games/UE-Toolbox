@@ -50,7 +50,7 @@
 2. Extract them to a folder of your choice.  
 3. Open **Visual Studio** > **Tools** > **Code Snippets Manager**.  
 4. In **Visual C++ > Unreal**, locate a `.snippet` path.  
-5. The path should resemble:  C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\VC\Snippets\1033\Visual C++\Unreal Engine\
+5. The path should resemble:  `C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\VC\Snippets\1033\Visual C++\Unreal Engine\`
 6. Paste the custom snippets into this folder (administrator access required).  
 7. Restart Visual Studio.  
 
