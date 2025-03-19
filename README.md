@@ -1,3 +1,35 @@
+<br>
+
+<div align = center>
+
+[![Badge Fab]][Fab]   
+[![Badge CPP]][CPP]   
+[![Badge Website]][Website]   
+
+</div>
+
+<br>
+<br>
+
+
+<!---------------------------------------------------------------------------->
+
+[Fab]: https://www.fab.com/sellers/Ciji%20Games
+[CPP]: https://www.fab.com/listings/6f1236ea-3587-4cdc-808c-1624ce0b9500
+[Website]: https://www.cijigames.com/
+
+
+
+
+
+<!---------------------------------[ Badges ]---------------------------------->
+
+[Badge Fab]: https://img.shields.io/badge/Fab.com-Seller-blue?style=for-the-badge
+[Badge CPP]: https://img.shields.io/badge/C%2B%2B-Generator-orange?style=for-the-badge
+[Badge Website]: https://img.shields.io/badge/CijiGames.com-8A2BE2?style=for-the-badge
+
+
+
 # Usage Guide  
 
 ## **RegenerateCPP.bat**  
@@ -11,7 +43,7 @@
 ---
 
 ## **Custom Snippets for Visual Studio**  
-**Purpose:** Adds custom snippet macros to Visual Studio.  
+**Purpose:** Adds custom snippet macros to Visual Studio.
 
 ### **Steps:**  
 1. Download the snippet files.  
@@ -50,7 +82,7 @@
 
 ## **renom.exe**  
 **Purpose:** Provides workflows to rename projects, plugins, targets, and modules. 
-Source repo: https://github.com/UnrealisticDev/Renom
+[Source repo](https://github.com/UnrealisticDev/Renom) 
 
 ### **Steps:**  
 1. Download the `.exe`
