@@ -2,6 +2,8 @@
 
 <div align = center>
 
+# Unreal Engine toolbox  
+
 [![Badge Fab]][Fab]   
 [![Badge CPP]][CPP]   
 [![Badge Website]][Website]   
@@ -28,9 +30,17 @@
 [Badge CPP]: https://img.shields.io/badge/C%2B%2B-Generator-orange?style=for-the-badge
 [Badge Website]: https://img.shields.io/badge/CijiGames.com-8A2BE2?style=for-the-badge
 
+# Useful links: 
+
+<a href="https://github.com/melqassas/"><img src="https://cdn-icons-png.flaticon.com/512/5396/5396942.png" align="left" height="36" width="36" ></a>
+### **[Unreal Engine 5 class UML](https://www.figma.com/design/lVtN4zjquZ1NXZOBGeRmrt/Unreal-Engine-Class-UML?node-id=0-1)**
+<br/>
 
 
-# Usage Guide  
+
+
+
+# Utilities How-To:  
 
 ## **RegenerateCPP.bat**  
 **Purpose:** Cleans and rebuilds the entire C++ solution.  
