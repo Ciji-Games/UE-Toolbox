@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>0_Draw Debug Line</Title>
+      <Author>Ciji Games</Author>
+      <Description>Snippet to draw a debug line in Unreal Engine</Description>
+      <Shortcut>PrintStringLine</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CPP">
+        <![CDATA[
+DrawDebugLine(GetWorld(),$Start$,$End$,FColor::Red,false,1.f,0,5.f);
+                ]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>Start</ID>
+          <ToolTip>Starting point of the line</ToolTip>
+          <Default>FVector(0.f, 0.f, 0.f)</Default>
+        </Literal>
+        <Literal>
+          <ID>End</ID>
+          <ToolTip>Ending point of the line</ToolTip>
+          <Default>FVector(100.f, 0.f, 0.f)</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

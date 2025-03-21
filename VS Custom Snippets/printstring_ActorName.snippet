@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>0_PrintString actor name</Title>
+      <Author>Ciji Games</Author>
+      <Description>Snippet to log the name of an actor in Unreal Engine</Description>
+      <Shortcut>PrintStringActorName</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CPP">
+        <![CDATA[
+//Display the actor name in log
+if (MyObject)
+{
+    UE_LOG(LogTemp, Warning, TEXT("Object name: %s"), *MyObject->GetName());
+}
+                ]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>MyObject</ID>
+          <ToolTip>The actor/object whose name will be logged</ToolTip>
+          <Default>MyObject</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

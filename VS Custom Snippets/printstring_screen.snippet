@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>0_PrintString on screen</Title>
+      <Author>Ciji Games</Author>
+      <Description>Snippet for GEngine->AddOnScreenDebugMessage in Unreal Engine</Description>
+      <Shortcut>PrintStringScreen</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CPP">
+        <![CDATA[
+if (GEngine)
+{
+    GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("$screen_message$"));
+}
+                ]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>screen_message</ID>
+          <ToolTip>The message to display on the screen</ToolTip>
+          <Default>Hello, Unreal!</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
