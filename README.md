@@ -101,6 +101,10 @@
 
 ## **Custom Snippets for Visual Studio**  
 **Purpose:** Adds custom snippet macros to Visual Studio.
+<div align = center>
+<img src="https://github.com/Ciji-Games/UE-Toolbox/blob/main/VS%20Custom%20Snippets/SnippetManager.png?raw=true" width="300"/><img src="https://github.com/Ciji-Games/UE-Toolbox/blob/main/VS%20Custom%20Snippets/customSnippets.gif?raw=true" width="500"/>
+</div>
+<br>
 
 ### **Steps:**  
 1. Download the snippet files.  
