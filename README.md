@@ -97,6 +97,20 @@
 ---
 
 
+<!---------------------------------[ auto scan LFS files ]---------------------------------->
+## **checkLFS.bat**  
+**Purpose:** scan a UE project, add files that are **more than 100MB and not tracked** to the .gitattribute  
+
+### **Steps:**  
+1. Place the `.bat` file next to your `.gitattribute` (after LSF install).  
+2. Run the `.bat` file (as administrator if necessary). 
+3. Wait for the process to complete. A message will indicate how many files were added to the LFS track list.
+  
+
+
+---
+
+
 <!---------------------------------[ VS snippets ]---------------------------------->
 
 ## **Custom Snippets for Visual Studio**  
