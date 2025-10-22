@@ -63,6 +63,30 @@
 
 ---
 
+<!---------------------------------[ batch commit ]---------------------------------->
+## **BatchCommit.bat**  
+**Purpose:** Automatically stages and commits all local Git changes smaller than 99 MB, grouping them into multiple commits if needed.  
+The script **does not** push automatically so that you can review the commits first.
+
+You still need Git installed on your computer or a Git GUI (for example, **Fork** or **GitHub Desktop**).
+
+### **Steps:**  
+1. Place the `.bat` file **anywhere inside your Git repository**.  
+2. Run the `.bat` file (double-click or execute in CMD).  
+3. When prompted, enter a **commit description** (e.g. `FixTextures`, `UpdateAssets`, etc.).  
+4. The script will:  
+   - **Auto-detect** the `.git` directory (searches up to 4 parent folders).  
+   - **Skip large files** over **99 MB** to avoid Git errors and maintain performance.  
+   - **Automatically group files** so that each commit stays under **200 MB total**.  
+   - **Commit each group separately** with numbered commit messages (e.g. `FixTextures (1)`, `FixTextures (2)` ...).  
+5. When done, it displays:  
+   ```
+   [Done] All steps completed.
+   ```  
+6. Press any key to close the window.  
+
+---
+
 <!---------------------------------[ renom.exe ]---------------------------------->
 
 ## **renom.exe**  
